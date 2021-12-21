@@ -8,10 +8,30 @@
 
 using namespace std;
 
+
 class Func{
     protected:
-
+        string equation;
+        char variable;
+        double input;
+        double output;
     public:
+        Func();
+        Func(string eq):equation(eq){};
+
+        void printEquation(){
+            cout<< this->equation<<endl;
+        }
+
+        void setVariable(){
+            cout<< "variable: ";
+            cin >> this->variable;
+        }
+
+        void printVariable(){
+            cout<<this->variable<<endl;
+        }
+
 
 };
 
